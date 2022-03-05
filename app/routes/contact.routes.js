@@ -12,13 +12,13 @@ module.exports = app =>{
 
     router.get("/favorite",contacts.findAllFavorite);
 
-    router.get("/:id",contacts.update);
-
     router.put("/:id",contacts.update);
 
     router.delete("/:id",contacts.delete);
 
     router.delete("/",contacts.deleteAll);
+
+    router.get("/:id",contacts.findOne);
 
     app.use("/api/contacts",router);
 };

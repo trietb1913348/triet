@@ -24,4 +24,4 @@ schema.method("toJSON", function(){
     return object;
 });
 
-module.exports =mongoose.model("contact",schama);
+module.exports =mongoose.model("contact",schema);
